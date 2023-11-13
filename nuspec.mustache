@@ -30,7 +30,7 @@
         <!-- Dependencies are automatically installed when the package is installed -->
         <dependencies>
 
-            <dependency id="System.Text.Json" version="13.0.3" />
+            <dependency id="System.Text.Json" version="7.0.2" />
             {{#useRestSharp}}
             <dependency id="RestSharp" version="110.2.0" />
             {{/useRestSharp}}
@@ -44,6 +44,7 @@
             {{#supportsRetry}}
             <dependency id="Polly" version="7.2.3" />
             {{/supportsRetry}}
+            <PackageReference Include="Macross.Json.Extensions" Version="3.0.0" />
 
         </dependencies>
     </metadata>

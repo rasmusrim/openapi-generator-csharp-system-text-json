@@ -21,10 +21,6 @@ using System.Text.Json.Serialization;
 {{#validatable}}
 using System.ComponentModel.DataAnnotations;
 {{/validatable}}
-using OpenAPIDateConverter = {{packageName}}.Client.OpenAPIDateConverter;
-{{#useCompareNetObjects}}
-using OpenAPIClientUtils = {{packageName}}.Client.ClientUtils;
-{{/useCompareNetObjects}}
 {{#models}}
 {{#model}}
 {{#oneOf}}
